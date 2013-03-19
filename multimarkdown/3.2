@@ -1,0 +1,12 @@
+#%Module1.0
+source /usr/local/biostat/lib/modules.tcl
+source /home/software/lucid/Modules/default/modulefiles/multimarkdown/multimarkdown.tcl
+
+set app     multimarkdown
+set version 3.2
+set modroot /home/software/lucid/$app/$version
+
+conflict multimarkdown
+
+prepend-path PATH      $modroot/bin
+prepend-path TEXMFHOME $modroot/lib/texmf

@@ -1,0 +1,15 @@
+#%Module1.0
+source /usr/local/biostat/lib/modules.tcl
+source /home/software/lucid/Modules/default/modulefiles/slurm/slurm.tcl
+
+set app     slurm
+set version 2.3.1
+set modroot /home/software/lucid/$app/$version
+
+conflict slurm
+
+prepend-path PATH            $modroot/bin:$modroot/sbin
+prepend-path C_INCLUDE_PATH  $modroot/include
+prepend-path LD_LIBRARY_PATH $modroot/lib
+prepend-path MANPATH         $modroot/share/man
+prepend-path PERL5LIB        $modroot/lib/perl

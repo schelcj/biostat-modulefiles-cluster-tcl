@@ -1,0 +1,11 @@
+#%Module1.0
+source /usr/local/biostat/lib/modules.tcl
+source /home/software/lucid/Modules/default/modulefiles/sas/sas.tcl
+
+set version 9.2
+set app     sas
+set modroot /home/software/SAS/SASFoundation/9.2
+
+prepend-path PATH $modroot/bin
+
+biostat::license $app $version

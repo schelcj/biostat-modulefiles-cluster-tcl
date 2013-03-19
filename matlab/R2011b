@@ -1,0 +1,15 @@
+#%Module1.0
+source /usr/local/biostat/lib/modules.tcl
+source /home/software/lucid/Modules/default/modulefiles/matlab/matlab.tcl
+
+set app     matlab
+set version R2011b
+set modroot /home/software/lucid/$app/$version
+set mcrjre  $modroot/sys/java/jre/glnxa64/jre/lib/amd64
+
+conflict matlab
+
+prepend-path PATH            $modroot/bin:$modroot/bin/glnxa64
+prepend-path LD_LIBRARY_PATH $modroot/bin/glnxa64/:$modroot/runtime/glnxa64/:$modroot/sys/os/glnxa64/:$mcrjre/native_threads:$mcrjre/server/:$mcrjre/client:$mcrjre/
+
+biostat::license $app $version

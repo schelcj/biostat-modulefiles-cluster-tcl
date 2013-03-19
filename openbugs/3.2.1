@@ -1,0 +1,13 @@
+#%Module1.0
+source /usr/local/biostat/lib/modules.tcl
+source /home/software/lucid/Modules/default/modulefiles/openbugs/openbugs.tcl
+
+set app     openbugs
+set version 3.2.1
+set modroot /home/software/lucid/$app/$version
+
+conflict openbugs
+
+prepend-path PATH            $modroot/bin
+prepend-path LD_LIBRARY_PATH $modroot/lib
+prepend-path MANPATH         $modroot/man

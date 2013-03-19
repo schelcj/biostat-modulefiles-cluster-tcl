@@ -1,0 +1,12 @@
+#%Module1.0
+source /usr/local/biostat/lib/modules.tcl
+source /home/software/lucid/Modules/default/modulefiles/scythe/scythe.tcl
+
+set app     scythe
+set version 1.0.3
+set modroot /home/software/lucid/$app/$version
+
+conflict scythe
+
+prepend-path C_INCLUDE_PATH     $modroot/include
+prepend-path CPLUS_INCLUDE_PATH $modroot/include

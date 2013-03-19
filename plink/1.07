@@ -1,0 +1,11 @@
+#%Module1.0
+source /usr/local/biostat/lib/modules.tcl
+source /home/software/lucid/Modules/default/modulefiles/plink/plink.tcl
+
+set app     plink
+set version 1.07
+set modroot /home/software/lucid/$app/$version
+
+conflict plink
+
+prepend-path PATH $modroot

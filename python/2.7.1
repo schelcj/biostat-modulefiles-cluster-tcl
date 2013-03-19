@@ -1,0 +1,15 @@
+#%Module1.0
+source /usr/local/biostat/lib/modules.tcl
+source /home/software/lucid/Modules/default/modulefiles/python/python.tcl
+
+set app     python
+set version 2.7.1
+set modroot /home/software/lucid/$app/$version
+
+conflict python
+
+prepend-path PATH            $modroot/bin
+prepend-path MANPATH         $modroot/share/man
+prepend-path PYTHONPATH      $modroot/lib/python2.7:$modroot/lib/python
+prepend-path LD_LIBRARY_PATH $modroot/lib
+prepend-path C_INCLUDE_PATH  $modroot/include

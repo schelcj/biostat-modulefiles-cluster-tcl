@@ -1,0 +1,12 @@
+#%Module1.0
+source /usr/local/biostat/lib/modules.tcl
+source /home/software/lucid/Modules/default/modulefiles/padb/padb.tcl
+
+
+set app     padb
+set version 3.3
+set modroot /home/software/lucid/$app/$version
+
+conflict padb
+
+prepend-path PATH $modroot/bin

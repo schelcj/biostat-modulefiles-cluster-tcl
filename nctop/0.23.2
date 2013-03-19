@@ -1,0 +1,12 @@
+#%Module1.0
+source /usr/local/biostat/lib/modules.tcl
+source /home/software/lucid/Modules/default/modulefiles/nctop/nctop.tcl
+
+set app     nctop
+set version 0.23.2
+set modroot /home/software/lucid/$app/$version
+
+conflict nctop
+
+prepend-path PATH    $modroot/bin
+prepend-path MANPATH $modroot/man

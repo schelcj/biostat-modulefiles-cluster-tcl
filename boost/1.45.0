@@ -1,0 +1,16 @@
+#%Module1.0
+source /usr/local/biostat/lib/modules.tcl
+source /home/software/lucid/Modules/default/modulefiles/boost/boost.tcl
+
+set app     boost
+set version 1.45.0
+set modroot /home/software/lucid/$app/$version
+
+conflict boost
+
+prepend-path LD_LIBRARY_PATH    $modroot/lib  
+prepend-path CPLUS_INCLUDE_PATH $modroot/include
+
+setenv BOOST_LINK $modroot/lib
+setenv BOOST_INC  $modroot/include
+setenv BOOST_ROOT $modroot
