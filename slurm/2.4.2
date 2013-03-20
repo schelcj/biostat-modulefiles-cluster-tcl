@@ -14,4 +14,6 @@ prepend-path LD_LIBRARY_PATH $modroot/lib
 prepend-path MANPATH         $modroot/share/man
 prepend-path PERL5LIB        $modroot/lib/perl
 
-set-alias sstate /usr/local/biostat/bin/cluster_status.pl
+set-alias sstate  $modroot/../utils/utils/cluster_status.pl
+set-alias sarray  $modroot/../utils/sarray/sarray
+set-alias srunall $modroot/../utils/srunall/srunall
