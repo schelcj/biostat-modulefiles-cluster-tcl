@@ -3,3 +3,4 @@ module load use.own
 module load R
 module load biostat
 module load slurm
+module load perl
