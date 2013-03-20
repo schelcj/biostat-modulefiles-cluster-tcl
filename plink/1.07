@@ -1,6 +1,6 @@
 #%Module1.0
-source /usr/local/biostat/lib/modules.tcl
-source /home/software/lucid/Modules/default/modulefiles/plink/plink.tcl
+source /home/software/lucid/Modules/modulefiles/modules.tcl
+source /home/software/lucid/Modules/modulefiles/plink/plink.tcl
 
 set app     plink
 set version 1.07

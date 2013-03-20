@@ -1,6 +1,6 @@
 #%Module1.0
-source /usr/local/biostat/lib/modules.tcl
-source /home/software/lucid/Modules/default/modulefiles/jags/jags.tcl
+source /home/software/lucid/Modules/modulefiles/modules.tcl
+source /home/software/lucid/Modules/modulefiles/jags/jags.tcl
 
 set app     jags
 set version 3.1.0

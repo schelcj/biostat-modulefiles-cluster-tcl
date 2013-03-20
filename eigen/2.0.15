@@ -1,6 +1,6 @@
 #%Module1.0
-source /usr/local/biostat/lib/modules.tcl
-source /home/software/lucid/Modules/default/modulefiles/eigen/eigen.tcl
+source /home/software/lucid/Modules/modulefiles/modules.tcl
+source /home/software/lucid/Modules/modulefiles/eigen/eigen.tcl
 
 set app     eigen
 set version 2.0.15

@@ -1,6 +1,6 @@
 #%Module1.0
-source /usr/local/biostat/lib/modules.tcl
-source /home/software/lucid/Modules/default/modulefiles/matlab/matlab.tcl
+source /home/software/lucid/Modules/modulefiles/modules.tcl
+source /home/software/lucid/Modules/modulefiles/matlab/matlab.tcl
 
 set app     matlab
 set version R2011b

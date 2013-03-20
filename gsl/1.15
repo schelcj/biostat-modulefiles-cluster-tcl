@@ -1,6 +1,6 @@
 #%Module1.0
-source /usr/local/biostat/lib/modules.tcl
-source /home/software/lucid/Modules/default/modulefiles/gsl/gsl.tcl
+source /home/software/lucid/Modules/modulefiles/modules.tcl
+source /home/software/lucid/Modules/modulefiles/gsl/gsl.tcl
 
 set app     gsl
 set version 1.15
