@@ -1,5 +1,5 @@
 #%Module1.0
-source /home/software/lucid/MOdules/modulefiles/modules.tcl
+source /home/software/lucid/Modules/modulefiles/modules.tcl
 source /home/software/lucid/Modules/modulefiles/boost/boost.tcl
 
 set app     boost
