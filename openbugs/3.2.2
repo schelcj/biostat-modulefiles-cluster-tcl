@@ -1,0 +1,13 @@
+#%Module1.0
+source /home/software/lucid/Modules/modulefiles/modules.tcl
+source /home/software/lucid/Modules/modulefiles/openbugs/openbugs.tcl
+
+set app     openbugs
+set version 3.2.2
+set modroot /home/software/lucid/$app/$version
+
+conflict openbugs
+
+prepend-path PATH            $modroot/bin
+prepend-path LD_LIBRARY_PATH $modroot/lib
+prepend-path MANPATH         $modroot/man
