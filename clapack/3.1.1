@@ -1,0 +1,13 @@
+#%Module1.0
+source /home/software/lucid/Modules/modulefiles/modules.tcl
+source /home/software/lucid/Modules/modulefiles/clapack/clapack.tcl
+
+set app     clapack
+set version 3.1.1
+set modroot /home/software/lucid/$app/$version
+
+conflict clapack
+
+prepend-path LD_LIBRARY_PATH $modroot/lib
+prepend-path C_INCLUDE_PATH  $modroot/include
+prepend-path LIBRARY_PATH    $modroot/lib
