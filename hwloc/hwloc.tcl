@@ -1,0 +1,3 @@
+module-whatis "Description: The Portable Hardware Locality (hwloc) software package provides a portable abstraction (across OS, versions, architectures, ...) of the hierarchical topology of modern architectures, including NUMA memory nodes, sockets, shared caches, cores and simultaneous multithreading. It also gathers various system attributes such as cache and memory information as well as the locality of I/O devices such as network interfaces, InfiniBand HCAs or GPUs. It primarily aims at helping applications with gathering information about modern computing hardware so as to exploit it accordingly and efficiently."
+module-whatis "Vendor: http://www.open-mpi.org/projects/hwloc/"
+module-whatis "Licenses: http://www.opensource.org/licenses/bsd-license.php"

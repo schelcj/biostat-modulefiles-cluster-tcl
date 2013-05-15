@@ -1,0 +1,16 @@
+#%Module1.0
+source /home/software/lucid/Modules/modulefiles/modules.tcl
+source /home/software/lucid/Modules/modulefiles/hwloc/hwloc.tcl
+
+set app     hwloc
+set version 1.5
+set modroot /home/software/lucid/$app/$version
+
+conflict hwloc
+
+prepend-path PATH               $modroot/bin
+prepend-path MANPATH            $modroot/share/man
+prepend-path LD_LIBRARY_PATH    $modroot/lib
+prepend-path LIBRARY_PATH       $modroot/lib
+prepend-path C_INCLUDE_PATH     $modroot/include
+prepend-path CPLUS_INCLUDE_PATH $modroot/include
