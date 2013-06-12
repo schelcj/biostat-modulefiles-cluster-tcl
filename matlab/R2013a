@@ -9,7 +9,7 @@ set mcrjre  $modroot/sys/java/jre/glnxa64/jre/lib/amd64
 
 conflict matlab
 
-prepend-path PATH            $modroot/bin:$modroot/bin/glnxa64
+prepend-path PATH            $modroot/bin:$modroot/bin/glnxa64:$modroot/toolbox/distcomp/bin
 prepend-path LD_LIBRARY_PATH $modroot/bin/glnxa64/:$modroot/runtime/glnxa64/:$modroot/sys/os/glnxa64/:$mcrjre/native_threads:$mcrjre/server/:$mcrjre/client:$mcrjre/
 
 biostat::license $app $version
