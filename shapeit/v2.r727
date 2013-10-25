@@ -1,0 +1,11 @@
+#%Module1.0
+source /home/software/lucid/Modules/modulefiles/modules.tcl
+source /home/software/lucid/Modules/modulefiles/mixmapper/mixmapper.tcl
+
+set app     shapeit
+set version v2.r727
+set modroot /home/software/lucid/$app/$version
+
+conflict shapeit
+
+prepend-path PATH $modroot/bin

@@ -1,0 +1,11 @@
+#%Module1.0
+source /home/software/lucid/Modules/modulefiles/modules.tcl
+source /home/software/lucid/Modules/modulefiles/mixmapper/mixmapper.tcl
+
+set app     mixmapper
+set version 1.02
+set modroot /home/software/lucid/$app/$version
+
+conflict mixmapper 
+
+prepend-path PATH $modroot/bin
