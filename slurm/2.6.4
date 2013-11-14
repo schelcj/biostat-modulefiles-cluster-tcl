@@ -1,0 +1,14 @@
+#%Module1.0
+source /home/software/lucid/Modules/modulefiles/modules.tcl
+source /home/software/lucid/Modules/modulefiles/slurm/slurm.tcl
+
+set app     slurm
+set version 2.6.4
+set modroot /home/software/lucid/$app/$version
+set include /home/software/lucid/Modules/modulefiles/slurm/include.tcl
+
+conflict slurm
+
+if { [ file exists $include ] } {
+    source $include
+}
