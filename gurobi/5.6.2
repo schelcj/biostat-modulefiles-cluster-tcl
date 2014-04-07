@@ -1,0 +1,14 @@
+#%Module1.0
+source /home/software/lucid/Modules/modulefiles/modules.tcl
+source /home/software/lucid/Modules/modulefiles/gurobi/gurobi.tcl
+
+set app     gurobi
+set version 5.6.2
+set modroot /home/software/lucid/$app/$version
+
+conflict gurobi
+
+prepend-path PATH             $modroot/bin
+prepend-path LD_LIBRARY_PATH  $modroot/lib
+prepend-path GUROBI_HOME      $modroot
+prepend-path GRB_LICENSE_FILE $modroot/../$app.lic
